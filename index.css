@@ -526,3 +526,8 @@ footer {
         text-align: center; /* Center text on smaller screens */
     }
 }
+
+footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
