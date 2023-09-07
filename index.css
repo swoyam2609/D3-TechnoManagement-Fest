@@ -480,3 +480,49 @@ body {
 }
 
 /* Modal end */
+
+footer {
+    width: 100%;
+    background-color: #051425;
+    color: #fff;
+    padding: 20px 0; /* Add padding from top and bottom */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row on small screens */
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Style the logo */
+.footer-logo img {
+    width: 100px; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+/* Style the contact details */
+.contact-details {
+    text-align: left;
+    margin: 0 20px 20px 20px; /* Add spacing on all sides of each contact block */
+    flex: 1; /* Distribute equal width to each contact block */
+}
+
+.contact-details h3 {
+    font-size: 16px;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items vertically on smaller screens */
+    }
+
+    .contact-details {
+        text-align: center; /* Center text on smaller screens */
+    }
+}
