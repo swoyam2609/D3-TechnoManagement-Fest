@@ -485,7 +485,7 @@ footer {
     width: 100%;
     background-color: #051425;
     color: #fff;
-    padding: 20px 0; /* Add padding from top and bottom */
+    padding: 15px 0; /* Add padding from top and bottom */
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next row on small screens */
     justify-content: space-around;
