@@ -285,6 +285,74 @@ body {
     display: block;
 }
 
+.eventContestFlippingCardParent{
+    width:85rem;
+    height:21rem;
+}
+
+.eventContestFlippingCard{
+    width:100%;
+    height:100%;
+    position: relative;
+    transition: transform 1500ms;
+    background: transparent;
+    transform-style: preserve-3d;
+    
+}
+ 
+.eventContestFlippingCard:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+
+}
+
+.eventContestFlippingCard img{
+    width: 100%;
+    height:100%;
+    border-radius: 1rem;
+    overflow: hidden;
+/* border: 0.1rem solid #1a4565; */
+    object-fit: conver;    
+    /* border-radius: 1rem; */
+    /* border: 0.1rem solid #1a4565;
+    margin: 1.5rem 0; */
+}
+
+.eventCardFront,.eventCardBack{
+height:100%;
+width:100%;
+position:absolute;
+backface-visibility: hidden;
+border-radius: 1rem;
+border: 0.1rem solid #1a4565;
+
+}
+
+.eventCardBack{
+    background-color: #032f50;
+    transform: rotateY(180deg) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.eventCardBack h1{
+    font-size: 1cqw;
+    font-weight: bold;
+    color:#f7f5f4;
+}
+
+.eventCardBack h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color:#efb584;
+}
+
+
+
 .eventImg {
     transition: all 300ms ease-in-out;
 }
@@ -359,6 +427,17 @@ body {
         margin-bottom: 1rem;
         font-size: 1.5rem;
     }
+
+
+    .eventContestFlippingCard{
+
+        width: calc(100vw - 6rem);
+        height: calc(100vh - 12rem);
+        aspect-ratio: 1;
+        margin: 1rem 0;
+
+    }
+
 
     .eventImg img {
         width: calc(100vw - 6rem);
